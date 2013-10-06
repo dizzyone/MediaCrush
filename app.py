@@ -28,7 +28,7 @@ def not_found(e):
 @app.errorhandler(Exception)
 def exception_catch_all(e):
     traceback.print_exc()
-    return render_template("error.html", error=repr(e)), 500 
+    return render_template("error.html", error=repr(e)), 500
 
 @app.context_processor
 def inject():
@@ -52,6 +52,10 @@ def index():
 @app.route("/mine")
 def mine():
     return render_template("mine.html")
+
+@app.route("/about")
+def about():
+    return render_template("about.html")
 
 @app.route("/demo")
 def demo():

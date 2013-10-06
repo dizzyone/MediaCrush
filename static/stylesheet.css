@@ -542,7 +542,7 @@ tr:first-child th, tr:first-child td {
     padding-right: 5px;
 }
 
-a[href^="https://twitter.com"] {
+.small a[href^="https://twitter.com"] {
     display: inline-block;
     width: 16px;
     height: 16px;
